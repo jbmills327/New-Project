@@ -23,15 +23,10 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    /*left: 96vw;*/
     width: 40px;
     height: 40px;
     background-color: black;
     border: none;
-    /*border-top: none;
-    border-right: none;
-    border-left: 2px solid green;
-    border-bottom: 2px solid green;*/
     color: gray;
     font-size: 20px;
     border-radius: 10px;
@@ -40,50 +35,6 @@ header {
 .openMenu :hover {
     color: white;
 }
-
-
-/*adjusts hamburger button position for mobile devices*/
-
-
-/*@media (max-width: 550px) {
-    .openMenu {
-        position: fixed;
-        top: 0;
-        left: 90vw;
-        width: 40px;
-        height: 40px;
-        background-color: black;
-        border: none;
-        border-top: none;
-      border-left: none;
-      border-right: 2px solid green;
-      border-bottom: 2px solid green;
-        color: white;
-        font-size: 15px;
-    }
-}*/
-
-
-/*Adjusts hamburger button for mid-size devices*/
-
-
-/*@media (max-width: 770px) {
-    .openMenu {
-        position: fixed;
-        top: 0;
-        left: 95vw;
-        width: 40px;
-        height: 40px;
-        background-color: black;
-        border: none;
-        border-top: none;
-    border-left: none;
-    border-right: 2px solid green;
-    border-bottom: 2px solid green;
-        color: white;
-        font-size: 15px;
-    }
-}*/
 
 
 /*Styling the quote div*/
@@ -95,6 +46,13 @@ header {
     vertical-align: middle;
     text-align: center;
     border: 5px solid black;
+}
+
+.aboutUs {
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px 1px lightgray, 4px 4px 1px black;
+    font-family: fantasy, sans-serif;
 }
 
 
