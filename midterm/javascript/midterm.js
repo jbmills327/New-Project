@@ -11,3 +11,19 @@ function closeNav() {
     document.getElementById("main").style.marginLeft = "0";
     document.body.style.backgroundColor = "white";
 }
+
+
+var containerHeight = $("#main").height();
+
+$(window).scroll(function() {
+
+    var upScroll = $(this).scrollTop();
+
+    if (upScroll <= containerHeight) {
+
+        $(".dragon").css({
+            "transform": "translate(0px, " + upScroll / 10 + "%)"
+        });
+    }
+
+});

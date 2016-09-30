@@ -9,11 +9,27 @@ header {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url(./resources/tolkienHeader.jpg);
+    background-image: url(./resources/newTolkienHeader.jpg);
     background-size: cover;
     /*opacity: .7;*/
     background-position: center;
     background-attachment: fixed;
+    overflow: hidden;
+}
+
+
+/*Styling for dragon for parallax effect*/
+
+.dragon {
+    background-position: center;
+    background-size: cover;
+    background-image: url(./resources/dragonFlying.png);
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    top: 30%;
+    left: 75%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -23,17 +39,17 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 40px;
-    height: 40px;
-    background-color: black;
-    border: none;
-    color: gray;
-    font-size: 20px;
-    border-radius: 10px;
+    background-color: transparent;
+    border: 3px solid black;
+    z-index: 1;
 }
 
-.openMenu :hover {
+
+/*Turns hamburger white and background black when hover*/
+
+.openMenu:hover {
     color: white;
+    background-color: black;
 }
 
 
@@ -47,6 +63,9 @@ header {
     text-align: center;
     border: 5px solid black;
 }
+
+
+/*styling for "About Us" Section.*/
 
 .aboutUs {
     color: black;
@@ -84,11 +103,11 @@ footer {
     position: relative;
     width: 100vw;
     height: 10vh;
-    /*background-image: url(./resources/tolkienHeader.jpg);
+    background-image: url(./resources/tolkienHeader.jpg);
     background-size: cover;
     opacity: .7;
     background-position: center;
-    background-attachment: fixed;*/
+    background-attachment: fixed;
     background-color: black;
 }
 
@@ -102,7 +121,7 @@ footer {
     /* 0 width - change this with JavaScript */
     position: fixed;
     /* Stay in place */
-    z-index: 1;
+    z-index: 2;
     /* Stay on top */
     top: 0;
     left: 0;
@@ -166,7 +185,27 @@ footer {
     }
 }
 
+
+/*setting size for carousel photos*/
+
 .carouselPhotos {
     width: 100vw;
     height: 320px;
+}
+
+
+/*Media query to adjust dragon for devices with smaller screens*/
+
+@media(max-width: 440px) {
+    .dragon {
+        background-position: center;
+        background-size: cover;
+        background-image: url(./resources/dragonFlying.png);
+        position: absolute;
+        width: 200px;
+        height: 75px;
+        top: 30%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+    }
 }
