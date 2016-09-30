@@ -22,7 +22,7 @@ $(window).scroll(function() {
     if (upScroll <= containerHeight) {
 
         $(".dragon").css({
-            "transform": "translate(0px, " + upScroll / 10 + "%)"
+            "transform": "translate(0px, " + upScroll / 10 + "vh)"
         });
     }
 
