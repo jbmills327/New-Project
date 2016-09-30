@@ -24,6 +24,9 @@ $(window).scroll(function() {
         $(".dragon").css({
             "transform": "translate(0px, " + upScroll / 10 + "vh)"
         });
+        $(".large-dragon").css({
+            "transform": "translate(0px, -" + upScroll / 5 + "vh)"
+        });
     }
 
 });

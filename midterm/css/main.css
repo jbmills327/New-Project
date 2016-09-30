@@ -34,6 +34,17 @@ header {
     /*transform: translate(-50%, -50%);*/
 }
 
+.large-dragon {
+    background-position: center;
+    background-size: cover;
+    background-image: url(./resources/largeDragon.png);
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 98%;
+    left: 2%;
+}
+
 
 /*Style the hamburger button that open side slide menu*/
 
@@ -76,6 +87,11 @@ header {
     font-family: fantasy, sans-serif;
 }
 
+.carousel {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
 
 /*styling the h1 element in the quote div*/
 
@@ -102,14 +118,15 @@ header {
 /*Styling the footer element*/
 
 footer {
+    border-top: 5px solid black;
     position: relative;
     width: 100vw;
     height: 10vh;
-    background-image: url(./resources/tolkienHeader.jpg);
+    /*background-image: url(./resources/tolkienHeader.jpg);
     background-size: cover;
     opacity: .7;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
     background-color: black;
 }
 
