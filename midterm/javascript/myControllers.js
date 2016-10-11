@@ -2,6 +2,28 @@ angular.module("myApp")
     .controller("MainCtrl", mainController);
 
 
+angular.module("myApp")
+    .config(myRouter);
+
+myRouter.$inject = ["$routeProvider"];
+
+function myRouter($routeProvider) {
+    $routeProvider
+        .when("/level1", {
+            templateUrl: "./templates/fantasy/level1.html"
+        })
+        .when("/level2", {
+            templateUrl: "./templates/level2.html"
+        })
+        .when("/level3", {
+            templateUrl: "./templates/level3.html"
+        })
+        .when(".level4", {
+            templateUrl: "./templates/level4.html"
+        })
+
+}
+
 function mainController() {
     var main = this;
 

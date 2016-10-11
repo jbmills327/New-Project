@@ -10,6 +10,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <!-- This script tage is for routing -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
 
     <title>Adventure Reading</title>
 
@@ -21,7 +23,7 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">Home</a>
         <a data-toggle="modal" data-target="#myModal">Sign In</a>
-        <a href="#jumpToAboutUs">Level 1</a>
+        <a href="#level1">Level 1</a>
         <a href="#genreCarousel">Level 2</a>
         <a href="#howToHelpJump">Level 3</a>
         <a href="#contactUsJump">Level 4</a>
@@ -58,10 +60,11 @@
         <span class = "glyphicon glyphicon-menu-hamburger" aria-hidden = "true"></span>MENU
       </button>
         <h1>{{ main.greeting }}</h1>
-    </header>
-    <ng-view>
+        <ng-view>
 
-    </ng-view>
+        </ng-view>
+    </header>
+
 
 
     <script type="text/javascript" src="./javascript/myModule.js"></script>
