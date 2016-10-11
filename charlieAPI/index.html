@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="pokeApp">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- This is bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+
+    <!-- This is my CSS file -->
+    <link rel="stylesheet" href="main.css" type="text/css">
+
+    <!-- This is jquery that is for bootstarop JS necessary  -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+
+    <!-- This is bootstrap js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+
+    <!-- This is the script tag for angular js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <title>Charlie API Lecture</title>
+</head>
+
+<body ng-controller="PokeCtrl as poke">
+
+    <form class="" ng-submit="poke.getMyPokemon()">
+        <input type=number placeholder="Pokemon" ng-model="poke.myData.num">
+
+    </form>
+    <div class="pokemonStuff">
+
+
+        <h1>Pokemon Name: {{ poke.myData.name }}</h1>
+        <h1>Weight: {{ poke.myData.weight }}</h1>
+        <h1>Special Attack: {{ poke.myData.sp_atk}}</h1>
+        <h1>Special Defense: {{ poke.myData.sp_def }}</h1>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="myScripts.js"></script>
+</body>
+
+</html>

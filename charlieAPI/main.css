@@ -1,0 +1,15 @@
+body {
+    position: relative;
+}
+
+form {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.pokemonStuff {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
