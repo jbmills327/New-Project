@@ -192,6 +192,15 @@ footer {
     /*padding: 20px;*/
 }
 
+#main h1 {
+    position: absolute;
+    top: 30%;
+    left: 7%;
+    background: linear-gradient(to right, #c40522, #a5727a, #c40522);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 

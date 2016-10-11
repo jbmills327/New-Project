@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/fantasy.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+
+    <title>Adventure Reading</title>
+
+</head>
+
+<body ng-controller="MainCtrl as main">
+    <!-- This is the slide menu -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a data-toggle="modal" data-target="#myModal">Sign In</a>
+        <a href="#jumpToAboutUs">Level 1</a>
+        <a href="#genreCarousel">Level 2</a>
+        <a href="#howToHelpJump">Level 3</a>
+        <a href="#contactUsJump">Level 4</a>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form ng-submit="main.addAUser()">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">New User</h4>
+                    </div>
+                    <div class="modal-body">
+                        <input class="form-control" type="text" ng-model="main.name" placeholder="Name">
+                        <input class="form-control" type="text" ng-model="main.age" placeholder="Age">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- The header sets the full page landing page -->
+    <header id="main">
+        <!-- This is the hamburger menu button that opens the slide menu -->
+        <button type="button" class="btn btn-default btn-lg openMenu" onclick="openNav()">
+        <span class = "glyphicon glyphicon-menu-hamburger" aria-hidden = "true"></span>MENU
+      </button>
+        <h1>{{ main.greeting }}</h1>
+    </header>
+    <ng-view>
+
+    </ng-view>
+
+
+    <script type="text/javascript" src="./javascript/myModule.js"></script>
+    <script type="text/javascript" src="./javascript/myControllers.js"></script>
+    <script type="text/javascript" src="./javascript/midterm.js"></script>
+</body>
+
+</html>

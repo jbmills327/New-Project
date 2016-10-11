@@ -1,0 +1,15 @@
+body {
+    height: 100%;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./resources/darkFantasy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
