@@ -2,22 +2,31 @@
 <div class="fluid-container">
     <!-- These are the thumbnails for the level 1 books -->
     <div class="row" ng-hide="main.hideLevelOneThumbs">
+        <!-- This is the thumbnail for Goblin Quest -->
         <div class="col-xs-6 col-md-3 bookImage">
             <a class="thumbnail" href="javascript:void(0)" ng-click="main.heresTheGoblin()">
                 <img src="./css/resources/goblinMinion.jpg" alt="Goblin">
             </a>
         </div>
+        <!-- End Thumbnail for Goblin Quest -->
+
+        <!-- This is the thumbnail for book 2 -->
         <div class="col-xs-6 col-md-3 bookImage">
             <a href="#" class="thumbnail">
                 <img src="./css/resources/comingSoon.png" alt="Coming Soon">
             </a>
         </div>
+        <!-- End thumbnail for book 2 -->
+
+        <!-- This is the thumbnail for book 3 -->
         <div class="col-xs-6 col-md-3 bookImage">
             <a href="#" class="thumbnail">
                 <img src="./css/resources/comingSoon.png" alt="Coming Soon">
             </a>
         </div>
     </div>
+    <!-- End thumbnail for book 3 -->
+
     <!-- This is the div that will hold the "book" for Goblin Quest -->
 
     <!-- This is also page one of Goblin Quest -->
@@ -27,6 +36,43 @@
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
             in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <!-- This is the button for the choice 1 -->
+        <div class="choiceOne">
+            <h4>Do you want to:   <button type="button" ng-click = "main.showPageTwoChoiceOne(); main.heresTheGoblin()" class = "btn btn-primary"name="button">CHOICE ONE</button></h4>
+        </div>
+        <!-- This is the button for choice 2 -->
+        <div class="choiceTwo">
+            <h4>Do you want to:  <button type="button" ng-click = "main.showPageTwoChoiceTwo(); main.heresTheGoblin()" class = "btn btn-success"name="button">CHOICE TWO</button></h4>
+        </div>
+    </div>
+
+
+    <!-- This is page 2 choice 1 of Goblin Quest -->
+    <div class="goblinQuestBook" ng-show="main.pageTwoChoiceOne">
+        <!-- This is the "X" button to take the user back to the home page -->
+        <button type="button" class="close" ng-click="main.showPageTwoChoiceOne()" name="button">&times;</button>
+        <p>
+            !!! This is page 2 choice 1 !!!! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <!-- This is the button for the choice 1 -->
+        <div class="choiceOne">
+            <h4>Do you want to:   <button type="button" class = "btn btn-primary"name="button">Do the Thing</button></h4>
+        </div>
+        <!-- This is the button for choice 2 -->
+        <div class="choiceTwo">
+            <h4>Do you want to:  <button type="button" class = "btn btn-success"name="button">Do the Thing</button></h4>
+        </div>
+    </div>
+
+    <!-- This is page 2 choice 2 of Goblin Quest -->
+    <div class="goblinQuestBook" ng-show="main.pageTwoChoiceTwo">
+        <!-- This is the "X" button to take the user back to the home page -->
+        <button type="button" class="close" ng-click="main.showPageTwoChoiceTwo()" name="button">&times;</button>
+        <p>
+            !!! This is page 2 choice 2 !!!! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <!-- This is the button for the choice 1 -->
         <div class="choiceOne">

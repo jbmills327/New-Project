@@ -55,13 +55,23 @@ function mainController() {
     main.showGoblinQuest = false;
     // This is used to hide all the thumbnails, will need to be included on all "back" buttons
     main.hideLevelOneThumbs = false;
-
+    // This is used to toggle page two choice one
+    main.pageTwoChoiceOne = false;
+    // THis is used to toggle page two choice two
+    main.pageTwoChoiceTwo = false;
 
 
 
     main.heresTheGoblin = function() {
         console.log("This is working");
         main.showGoblinQuest = !main.showGoblinQuest;
-        main.hideLevelOneThumbs = !main.hideLevelOneThumbs;
+        // main.hideLevelOneThumbs = !main.hideLevelOneThumbs;
+    }
+
+    main.showPageTwoChoiceOne = function() {
+        main.pageTwoChoiceOne = !main.pageTwoChoiceOne;
+    }
+    main.showPageTwoChoiceTwo = function() {
+        main.pageTwoChoiceTwo = !main.pageTwoChoiceTwo;
     }
 }
