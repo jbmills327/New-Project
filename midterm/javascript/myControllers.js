@@ -13,13 +13,13 @@ function myRouter($routeProvider) {
             templateUrl: "./templates/fantasy/level1.html"
         })
         .when("/level2", {
-            templateUrl: "./templates/level2.html"
+            templateUrl: "./templates/fantasy/level2.html"
         })
         .when("/level3", {
-            templateUrl: "./templates/level3.html"
+            templateUrl: "./templates/fantasy/level3.html"
         })
-        .when(".level4", {
-            templateUrl: "./templates/level4.html"
+        .when("/level4", {
+            templateUrl: "./templates/fantasy/level4.html"
         })
 
 }

@@ -13,3 +13,12 @@ header {
     background-attachment: fixed;
     overflow: hidden;
 }
+
+.bookImage {
+    top: 50vh;
+    left: 35%;
+    position: relative;
+    width: 200px;
+    /*height: 700px;*/
+    transform: translate(-50%, -50%);
+}
