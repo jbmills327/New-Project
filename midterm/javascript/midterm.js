@@ -14,9 +14,10 @@ function closeNav() {
     document.body.style.backgroundColor = "white";
 }
 
-
+// This is the fix for the scrolling issue that I was seeing
 var containerHeight = $("#main").height();
 
+// This is the Jquery for the parallax effect
 $(window).scroll(function() {
 
     var upScroll = $(this).scrollTop();

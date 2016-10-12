@@ -2,17 +2,44 @@ body {
     height: 100%;
 }
 
+
+/*Styling the header*/
+
 header {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-image: url(./resources/darkFantasy.jpg);
+    background-image: url(./resources/darkForest.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: fixed;
     overflow: hidden;
 }
+
+
+/*Style the hamburger button that open side slide menu*/
+
+.openMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+    z-index: 1;
+}
+
+
+/*Turns hamburger white and background black when hover*/
+
+.openMenu:hover {
+    color: lightgray;
+    background-color: black;
+}
+
+
+/*This is the styling for the div that holds the thumbnails*/
 
 .bookImage {
     top: 50vh;
@@ -21,4 +48,81 @@ header {
     width: 200px;
     /*height: 700px;*/
     transform: translate(-50%, -50%);
+}
+
+
+/* Styling the anchor tags in the bookImage div*/
+
+.bookImage a {
+    box-shadow: 3px 3px 3px gray;
+}
+
+
+/*Styling the actual pages for the books*/
+
+.goblinQuestBook {
+    position: absolute;
+    background: radial-gradient(white, #f9e0b1, #edcb8b);
+    width: 75%;
+    height: 75%;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+
+/*Positioning the button within the reading pane*/
+
+.goblinQuestBook button {
+    position: absolute;
+    padding: 10px 10px 10px 20px;
+}
+
+
+/*Positioning the text withing the reading pane*/
+
+.goblinQuestBook p {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+
+/*Styling and positioning the text for choice 1 */
+
+.choiceOne {
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    text-align: center;
+}
+
+
+/*Styling and positioning the button for choice 1*/
+
+.choiceOne button {
+    margin: 10px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+
+/*Styling and positioning the text for choice 2 */
+
+.choiceTwo {
+    position: absolute;
+    top: 75%;
+    left: 75%;
+    text-align: center;
+}
+
+
+/*Styling and positioning the button for choice 2*/
+
+.choiceTwo button {
+    margin: 10px;
+    box-shadow: 3px 3px 3px gray;
 }
