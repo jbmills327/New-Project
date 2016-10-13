@@ -18,27 +18,6 @@ header {
 }
 
 
-/*Style the hamburger button that open side slide menu*/
-
-.openMenu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    color: white;
-    background-color: transparent;
-    border: 3px solid white;
-    z-index: 1;
-}
-
-
-/*Turns hamburger white and background black when hover*/
-
-.openMenu:hover {
-    color: lightgray;
-    background-color: black;
-}
-
-
 /*This is the styling for the div that holds the thumbnails*/
 
 .bookImage {
@@ -125,4 +104,25 @@ header {
 .choiceTwo button {
     margin: 10px;
     box-shadow: 3px 3px 3px gray;
+}
+
+
+/*Style the hamburger button that open side slide menu*/
+
+.openMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    z-index: 1;
+}
+
+
+/*Turns hamburger white and background black when hover*/
+
+.openMenu:hover {
+    color: lightgray;
+    background-color: black;
 }
