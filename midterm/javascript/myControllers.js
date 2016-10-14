@@ -36,13 +36,14 @@ function mainController() {
     // Empty new user object
     main.newUsers = {}
         // Creating the User class
-    var User = function(name, age) {
+    var User = function(name, age, adventurer) {
             this.name = main.name;
             this.age = main.age;
+            this.adventurer = main.adventurer;
         }
         // This is the function that creates new Users
     main.addAUser = function() {
-            main.newUsers = new User(main.name, main.age);
+            main.newUsers = new User(main.name, main.age, main.adventurer);
             main.newUserList.push(main.newUsers);
             $("#myModal").modal("hide");
             main.newUsers = {};

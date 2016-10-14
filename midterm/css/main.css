@@ -129,9 +129,20 @@ footer {
     background-color: black;
     font-size: 3em;
     text-align: right;
-    padding-right: 7%;
-    padding-bottom: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
     color: lightgray;
+}
+
+footer a {
+    padding-left: .5em;
+    bottom: 1em;
+}
+
+footer h4 {
+    position: absolute;
+    text-align: left;
+    bottom: 1em;
 }
 
 
@@ -209,6 +220,14 @@ footer {
 }
 
 
+/*setting size for carousel photos*/
+
+.carouselPhotos {
+    width: 100vw;
+    height: 320px;
+}
+
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 
 @media screen and (max-height: 450px) {
@@ -218,14 +237,6 @@ footer {
     .sidenav a {
         font-size: 18px;
     }
-}
-
-
-/*setting size for carousel photos*/
-
-.carouselPhotos {
-    width: 100vw;
-    height: 320px;
 }
 
 
